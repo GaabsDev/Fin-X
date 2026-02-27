@@ -53,3 +53,4 @@
 /Users/gaabsdev/Projetos/Fin-x/FinX.Api/obj/Debug/net10.0/FinX.Api.pdb
 /Users/gaabsdev/Projetos/Fin-x/FinX.Api/obj/Debug/net10.0/FinX.Api.genruntimeconfig.cache
 /Users/gaabsdev/Projetos/Fin-x/FinX.Api/obj/Debug/net10.0/ref/FinX.Api.dll
+/Users/gaabsdev/Projetos/Fin-x/FinX.Api/obj/Debug/net10.0/FinX.Api.sourcelink.json

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FinX.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7beadd10ef18c3984d5b9f93f00c2351763deacb")]
 [assembly: System.Reflection.AssemblyProductAttribute("FinX.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FinX.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

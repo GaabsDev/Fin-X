@@ -12,3 +12,4 @@
 /Users/gaabsdev/Projetos/Fin-x/obj/Debug/net10.0/FinX.Runner.pdb
 /Users/gaabsdev/Projetos/Fin-x/obj/Debug/net10.0/FinX.Runner.genruntimeconfig.cache
 /Users/gaabsdev/Projetos/Fin-x/obj/Debug/net10.0/ref/FinX.Runner.dll
+/Users/gaabsdev/Projetos/Fin-x/obj/Debug/net10.0/FinX.Runner.sourcelink.json
