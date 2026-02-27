@@ -1,0 +1,32 @@
+# FinX Azure Deployment Configuration
+# Copy this file to terraform.tfvars and update the values
+
+# Project configuration
+project_name = "finx"
+environment  = "dev"  # Options: dev, staging, prod
+location     = "Brazil South"  # Options: "Brazil South", "East US", "West Europe", etc.
+
+# Database credentials (REQUIRED - set strong passwords)
+mongodb_username = "finxadmin"
+mongodb_password = "YourSecurePassword123!" # CHANGE THIS!
+
+# Container resources
+container_cpu    = 1    # CPU cores per container
+container_memory = 2    # GB of RAM per container
+
+# Security - IP addresses allowed to access Cosmos DB
+# For production, specify your actual IP addresses
+allowed_ips = [
+  "0.0.0.0",      # Allow all IPs (NOT recommended for production)
+  # "203.0.113.0", # Example: Your office IP
+  # "198.51.100.0" # Example: Your home IP
+]
+
+# Resource tags
+common_tags = {
+  Project     = "FinX"
+  Environment = "dev"
+  Owner       = "DevTeam"
+  Purpose     = "Healthcare API"
+  CostCenter  = "IT"
+}

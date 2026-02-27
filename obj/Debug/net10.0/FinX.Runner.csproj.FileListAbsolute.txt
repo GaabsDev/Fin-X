@@ -1,0 +1,14 @@
+/Users/gaabsdev/Projetos/Fin-x/obj/Debug/net10.0/FinX.Runner.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gaabsdev/Projetos/Fin-x/obj/Debug/net10.0/FinX.Runner.AssemblyInfoInputs.cache
+/Users/gaabsdev/Projetos/Fin-x/obj/Debug/net10.0/FinX.Runner.AssemblyInfo.cs
+/Users/gaabsdev/Projetos/Fin-x/obj/Debug/net10.0/FinX.Runner.csproj.CoreCompileInputs.cache
+/Users/gaabsdev/Projetos/Fin-x/bin/Debug/net10.0/FinX.Runner
+/Users/gaabsdev/Projetos/Fin-x/bin/Debug/net10.0/FinX.Runner.deps.json
+/Users/gaabsdev/Projetos/Fin-x/bin/Debug/net10.0/FinX.Runner.runtimeconfig.json
+/Users/gaabsdev/Projetos/Fin-x/bin/Debug/net10.0/FinX.Runner.dll
+/Users/gaabsdev/Projetos/Fin-x/bin/Debug/net10.0/FinX.Runner.pdb
+/Users/gaabsdev/Projetos/Fin-x/obj/Debug/net10.0/FinX.Runner.dll
+/Users/gaabsdev/Projetos/Fin-x/obj/Debug/net10.0/refint/FinX.Runner.dll
+/Users/gaabsdev/Projetos/Fin-x/obj/Debug/net10.0/FinX.Runner.pdb
+/Users/gaabsdev/Projetos/Fin-x/obj/Debug/net10.0/FinX.Runner.genruntimeconfig.cache
+/Users/gaabsdev/Projetos/Fin-x/obj/Debug/net10.0/ref/FinX.Runner.dll

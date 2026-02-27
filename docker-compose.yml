@@ -1,0 +1,74 @@
+version: '3.8'
+name: fin-x
+services:
+  # MongoDB Database
+  mongo:
+    image: mongo:7.0
+    container_name: finx-mongo
+    environment:
+      - MONGO_INITDB_DATABASE=finxdb
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - finx-network
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  # FinX API Application  
+  finx-api:
+    build:
+      context: .
+      dockerfile: FinX.Api/Dockerfile
+    container_name: finx-api
+    ports:
+      - '5006:5006'
+      - '5007:5007'
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:5006
+      - Mongo__ConnectionString=mongodb://mongo:27017
+      - Mongo__Database=finxdb
+    depends_on:
+      mongo:
+        condition: service_healthy
+    networks:
+      - finx-network
+    restart: unless-stopped
+    healthcheck:
+      test: curl -f http://localhost:5006/api/auth/login || exit 1
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  # FinX Scripts for DESAFIO 3
+  finx-scripts:
+    build:
+      context: .
+      dockerfile: FinX.Script/Dockerfile
+    container_name: finx-scripts
+    environment:
+      - DOTNET_ENVIRONMENT=Production
+      - ConnectionStrings__MongoDB=mongodb://mongo:27017
+      - MongoDB__Database=finxdb
+    depends_on:
+      mongo:
+        condition: service_healthy
+    networks:
+      - finx-network
+    restart: "no"
+    profiles:
+      - scripts
+
+networks:
+  finx-network:
+    driver: bridge
+
+volumes:
+  mongo_data:
